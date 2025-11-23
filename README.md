@@ -6,4 +6,4 @@ Being an influencer is much more than taking photos or posting videos.it's an ar
   5.provide value,Not just content
   6.Authenticity wins Always
   7.collabortion is Key
-  8.understand Analytics
+  8.understand Analytics.
