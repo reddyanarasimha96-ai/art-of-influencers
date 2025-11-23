@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Art of Influence — Course Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0b76ef;--muted:#6b7280;--bg:#f8fafc;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#6ee7b7);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav{display:flex;gap:18px;align-items:center}
+    a.btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:32px}
+    .eyebrow{color:var(--muted);font-weight:600;font-size:13px}
+    h1{font-size:34px;margin:10px 0 8px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .features{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:#fff;padding:10px 12px;border-radius:999px;border:1px solid #e6eef8;font-weight:600}
+
+    /* Card */
+    .card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(12,15,30,0.06)}
+    .price{font-size:28px;font-weight:700}
+    .cta{display:block;text-align:center;margin-top:14px}
+
+    /* Curriculum */
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+    .lesson{background:#fff;padding:12px;border-radius:10px;border:1px solid #eef2f6}
+
+    /* Testimonials */
+    .testimonials{display:flex;gap:12px;overflow:auto;padding-bottom:6px;margin-top:18px}
+    .t{min-width:220px;background:#fff;padding:16px;border-radius:10px;border:1px solid #eef2f6}
+
+    footer{margin-top:48px;padding:28px 0;color:var(--muted);font-size:14px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AI</div>
+        <div>
+          <div style="font-weight:700">Art of Influence</div>
+          <div style="font-size:12px;color:var(--muted)">by Hashpro Academy — course landing</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#pricing">Pricing</a>
+        <a class="btn" href="#enrol">Enroll</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Live Course • Cohort-based</div>
+        <h1>Art of Influence — master persuasion & leadership</h1>
+        <p class="lead">Learn evidence-based influence techniques, storytelling, negotiation, and public speaking. 8 weeks, live sessions, real-world projects.</p>
+
+        <div class="features">
+          <span class="chip">8 live sessions</span>
+          <span class="chip">Hands-on projects</span>
+          <span class="chip">Certificate</span>
+          <span class="chip">Community access</span>
+        </div>
+
+        <div style="margin-top:20px">
+          <a class="btn" href="#enrol" style="margin-right:10px">Enroll now</a>
+          <a href="#curriculum" style="color:var(--muted);text-decoration:none;font-weight:600">See curriculum ?</a>
+        </div>
+      </div>
+
+      <aside class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-size:12px;color:var(--muted)">Next cohort starts</div>
+            <div style="font-weight:700;margin-top:6px">Dec 8, 2025</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:12px;color:var(--muted)">Seats</div>
+            <div style="font-weight:800;color:#0b76ef">12 left</div>
+          </div>
+        </div>
+        <hr style="border:none;border-top:1px solid #eef6ff;margin:16px 0">
+        <div style="display:flex;justify-content:space-between;align-items:end">
+          <div>
+            <div style="font-size:12px;color:var(--muted)">One-time</div>
+            <div class="price">?2,499</div>
+            <div style="font-size:12px;color:var(--muted)">or 3 installments</div>
+          </div>
+          <div>
+            <a class="btn cta" href="#enrol">Reserve spot</a>
+          </div>
+        </div>
+
+        <div style="margin-top:12px;font-size:13px;color:var(--muted)">Includes recordings & study materials</div>
+      </aside>
+    </section>
+
+    <section id="curriculum">
+      <h2 style="margin-top:36px">Curriculum</h2>
+      <div class="grid">
+        <div class="lesson">Week 1 — Foundations of influence</div>
+        <div class="lesson">Week 2 — Psychology & framing</div>
+        <div class="lesson">Week 3 — Storytelling techniques</div>
+        <div class="lesson">Week 4 — Negotiation & persuasion</div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2 style="margin-top:32px">What learners say</h2>
+      <div class="testimonials">
+        <div class="t"><strong>Priya</strong><div style="color:var(--muted);font-size:13px;margin-top:6px">"Transformed my public speaking — practical & fun."</div></div>
+        <div class="t"><strong>Arjun</strong><div style="color:var(--muted);font-size:13px;margin-top:6px">"Loved the live roleplays — real progress."</div></div>
+        <div class="t"><strong>Meera</strong><div style="color:var(--muted);font-size:13px;margin-top:6px">"Great community and mentorship."</div></div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2 style="margin-top:32px">Pricing</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+        <div class="card" style="flex:1;min-width:220px">
+          <div style="font-weight:700">Standard</div>
+          <div style="font-size:22px;margin-top:8px">?2,499</div>
+          <div style="margin-top:10px;color:var(--muted)">Access to live sessions, recordings & community</div>
+        </div>
+        <div class="card" style="flex:1;min-width:220px">
+          <div style="font-weight:700">Premium</div>
+          <div style="font-size:22px;margin-top:8px">?4,999</div>
+          <div style="margin-top:10px;color:var(--muted)">Includes 1:1 coaching & feedback</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="enrol" style="margin-top:32px">
+      <h2>Reserve your seat</h2>
+      <div class="card" style="margin-top:12px">
+        <form onsubmit="event.preventDefault();alert('Thanks — contact: enroll@yourdomain.com')">
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <input required placeholder="Full name" style="flex:1;padding:10px;border:1px solid #e6eef8;border-radius:8px" />
+            <input required placeholder="Email" type="email" style="flex:1;padding:10px;border:1px solid #e6eef8;border-radius:8px" />
+            <button class="btn" style="padding:10px 16px">Reserve</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>© Hashpro Academy • Art of Influence</div>
+        <div style="color:var(--muted)">Made with ?? — Free with GitHub Pages</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
